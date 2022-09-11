@@ -14,3 +14,11 @@ The flashcrowd load describes a flash event, that is represented by a large spik
 Ramp-up is modeled by shock level (S), that is an order of magnitude increase in the average request (video clients) rate. Furthermore, it starts in $t_0$ and ends in $t_1$.
 
 $$ rampup = \frac{1}{\log_{10}(1+ S)} $$
+
+Sustained represents the maximum traffic (clients) level at the time interval $t_1$ and $t_2$. It is also modeled by $S$.
+
+$$ sustained = \log_{10}(1+ S) $$
+
+Ramp-down represents the end of the flash event, gradually decreasing the amount of traffic (video clients). In this phase, $n$ is a constant that defines the speed of reduction. Ramp-down is modeled by $n$ and $S$.
+
+$$ rampdown = n\times \log_{10}(1+ S) $$
