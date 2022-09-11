@@ -9,4 +9,4 @@ $$ f(y) = A \sin(F + \lambda) $$
 
 ## Flashcrowd
 
-The flashcrowd load describes a flash event, that is represented by a large spike or surge in traffic to a particular website. The flashcrowd is divided into three phases: ramp-up, sustained and ramp-down. 
+The flashcrowd load describes a flash event, that is represented by a large spike or surge in traffic to a particular website. The flashcrowd is divided into three phases: **ramp-up**, **sustained** and **ramp-down**. 
