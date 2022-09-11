@@ -22,3 +22,36 @@ $$ sustained = \log_{10}(1+ S) $$
 Ramp-down represents the end of the flash event, gradually decreasing the amount of traffic (video clients). In this phase, $n$ is a constant that defines the speed of reduction. Ramp-down is modeled by $n$ and $S$.
 
 $$ rampdown = n\times \log_{10}(1+ S) $$
+
+
+## Requirements
+- Python 2.7
+- VLC 
+
+## Usage
+
+### Sinusoid
+```
+usage: sinusoid.py [-h] [-V] [-v] [-s A,P] -l PLAYLIST [--poisson]
+                   [--no-poisson]
+                   duration lambd
+
+positional arguments:
+  duration              set the duration of the experiment in minutes
+  lambd                 set the (average) arrival rate of lambda
+                        clients/minute or normal level of functioning Rnorm
+                        for flash crowd
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -V, --version         show program's version number and exit
+  -v, --verbose         set verbosity level [default: None]
+  -s A,P, --sinusoid A,P
+                        set the sinusoidal lambda behavior, that varies with
+                        amplitude A on period P minutes around the lambda
+  -l PLAYLIST, --playlist PLAYLIST
+                        Set the playlist for the clients
+  --poisson
+  --no-poisson
+```
+#### Flashcrowd
