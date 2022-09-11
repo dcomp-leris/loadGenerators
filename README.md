@@ -11,4 +11,6 @@ $$ f(y) = A \sin(F + \lambda) $$
 
 The flashcrowd load describes a flash event, that is represented by a large spike or surge in traffic to a particular website. The flashcrowd is divided into three phases: **ramp-up**, **sustained** and **ramp-down**. 
 
-Ramp-up is modeled by shock level ($S$), that is an order of magnitude increase in the average request (video clients) rate. Furthermore, it starts in $t_0$ and ends in $t_1$.
+Ramp-up is modeled by shock level (S), that is an order of magnitude increase in the average request (video clients) rate. Furthermore, it starts in $t_0$ and ends in $t_1$.
+
+$$ rampup = \frac{1}{\log_{10}(1+ S)} $$
